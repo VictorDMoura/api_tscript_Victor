@@ -1,0 +1,26 @@
+{
+  "name": "api_tscript_victor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch \"srcts/\" -e \"ts, json\" --exec \"ts-node srcts/index.ts\"",
+    "build": "npx tsc",
+    "prod": "npm run build && outjs/index.js",
+    "start": "node outjs/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.1.0",
+    "@types/nodemon": "^1.19.6",
+    "nodemon": "^3.1.4"
+  }
+}
